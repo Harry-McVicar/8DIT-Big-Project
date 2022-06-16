@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-family: 'Tourney', cursive;
+}
+
+header {
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  background: blue;
+}
+
+nav ul, nav h1 {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 15px 0 15px;
+}
+
+nav a:hover {
+  color: black;
+  transition: 0.6s;
+}
+
+.showcase {
+  background: url(img/showcase.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.showcase h1, .showcase p {
+  background: rgba(100, 100, 100, 0.6);
+  border-radius: 100px;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+footer {
+  background: blue;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
