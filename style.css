@@ -25,7 +25,11 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding: 0 15px 0 15px;
+  padding: 5px 15px 5px 15px;
+}
+
+nav i {
+  padding: 0 10px 0 10px;
 }
 
 nav a:hover {
