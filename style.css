@@ -38,11 +38,38 @@ nav a:hover {
 }
 
 .showcase {
-  background: url(img/showcase.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   text-align: center;
+}
+
+#home {
+  background: url(img/showcase.jpg);
+}
+
+#water {
+  background: url(img/reservoir.jpg);
+}
+
+#wind {
+  background: url(img/windmills.jpg);
+}
+
+#sun {
+  background: url(img/photovoltaic.jpg);
+}
+
+#earth {
+  background: url(img/yellowstone-national-park.jpg);
+}
+
+#atoms {
+  background: url(img/nuclear-power-plant.jpg);
+}
+
+#plants {
+  background: url(img/tree.jpg);
 }
 
 .showcase h1, .showcase p {
