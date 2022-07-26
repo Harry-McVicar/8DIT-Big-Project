@@ -10,7 +10,8 @@ header {
   top: 0;
   width: 100vw;
   position: fixed;
-  background: blue;
+  background: #468ED0;
+  opacity: 0.9;
 }
 
 nav ul, nav h1 {
@@ -25,16 +26,24 @@ nav ul {
 
 nav li {
   list-style: none;
-  padding: 5px 15px 5px 15px;
+  padding: 30px 15px 5px 15px;
 }
 
 nav i {
   padding: 0 10px 0 10px;
 }
 
-nav a:hover {
-  color: black;
+nav a:hover, nav i:hover {
+  color: grey;
   transition: 0.6s;
+}
+
+#logo img {
+  margin: 10px;
+  padding: 2px;
+  opacity: 0.8;
+  border-radius: 20px;
+  border: 2px solid white;
 }
 
 .showcase {
@@ -83,7 +92,8 @@ nav a:hover {
 }
 
 .about {
-  background: lightblue;
+  background: #5AA6DE;
+  opacity: 0.9;
   text-align: center;
   padding: 20px;
 }
@@ -93,7 +103,8 @@ nav a:hover {
 }
 
 footer {
-  background: blue;
+  background: #468ED0;
+  opacity: 0.9;
   text-align: center;
   font-size: 20px;
   padding: 20px;
