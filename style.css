@@ -50,6 +50,7 @@ nav a:hover, nav i:hover {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100vw;
   text-align: center;
 }
 
@@ -93,13 +94,46 @@ nav a:hover, nav i:hover {
 
 .about {
   background: #5AA6DE;
-  opacity: 0.9;
+  opacity: 0.6;
   text-align: center;
   padding: 20px;
 }
 
-.about h1 {
+.about h1, .about p {
   padding: 10px;
+  color: black;
+}
+
+.quiz {
+  background: #5AA6DE;
+  opacity: 0.6;
+  text-align: center;
+  padding: 20px 10%;
+}
+
+.quiz h1 {
+  color: black;
+}
+
+.question {
+  color: black;
+	font-size: 24px;
+	margin: 10px;
+}
+
+.answers {
+  color: black;
+  margin-bottom: 20px;
+	text-align: justify;
+}
+
+.quiz #submit {
+  background: #468ED0;
+  border: 2px solid white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 footer {
