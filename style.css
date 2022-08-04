@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,17 +10,16 @@
 :root {
   --primary-color: #5AA6DE;
   --secondary-color: #468ED0;
-  --primary-font: 'Open Sans', sans-serif;
+  --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Tourney', cursive;
 }
 
 header {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   top: 0;
   width: 100vw;
   position: fixed;
   background: var(--secondary-color);
-  opacity: 0.9;
 }
 
 nav ul, nav h1 {
@@ -54,16 +55,18 @@ nav a:hover, nav i:hover {
 }
 
 .showcase {
-  font-family: var(--secondary-font);
-  background-size: cover;
-  background-position: center;
+  font-family: var(--primary-font);
   height: 100vh;
   width: 100vw;
   text-align: center;
 }
 
 #home {
-  background: url(img/showcase.jpg);
+  background: url(img/showcase.svg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 #water {
@@ -101,6 +104,8 @@ nav a:hover, nav i:hover {
 }
 
 .about {
+  border: 2px solid white;
+  border-radius: 20px;
   background: var(--primary-color);
   opacity: 0.6;
   text-align: center;
@@ -113,6 +118,8 @@ nav a:hover, nav i:hover {
 }
 
 .quiz {
+  border: 2px solid white;
+  border-radius: 20px;
   background: var(--primary-color);
   opacity: 0.6;
   text-align: center;
