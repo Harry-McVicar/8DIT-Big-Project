@@ -58,6 +58,8 @@ nav a:hover, nav i:hover {
   font-family: var(--primary-font);
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -66,7 +68,6 @@ nav a:hover, nav i:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 #water {
@@ -96,14 +97,17 @@ nav a:hover, nav i:hover {
 .showcase h1, .showcase p {
   background: rgba(100, 100, 100, 0.6);
   border-radius: 100px;
-  position: relative;
-  top: 150px;
-  text-align: center;
+  position: fixed;
+  top: 20vh;
   padding: 20px;
-  margin: 10px;
+  margin: 10px 60px;
 }
 
-.about {
+.showcase p {
+  top: 30vh;
+}
+
+#about, .quiz {
   border: 2px solid white;
   border-radius: 20px;
   background: var(--primary-color);
@@ -112,22 +116,17 @@ nav a:hover, nav i:hover {
   padding: 20px;
 }
 
-.about h1, .about p {
+#about h1, #about p, .quiz h1 {
   padding: 10px;
   color: black;
 }
 
-.quiz {
-  border: 2px solid white;
-  border-radius: 20px;
-  background: var(--primary-color);
-  opacity: 0.6;
-  text-align: center;
-  padding: 20px 10%;
+#about img{
+  max-width: 60%;
 }
 
-.quiz h1 {
-  color: black;
+.quiz {
+  padding: 20px 5%;
 }
 
 .question {
