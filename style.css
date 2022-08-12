@@ -5,6 +5,7 @@
   margin: 0;
   color: white;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -56,11 +57,17 @@ nav a:hover, nav i:hover {
 
 .showcase {
   font-family: var(--primary-font);
+  z-index: -1;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+#scroll-down {
+  position: fixed;
+  top: 80vh;
 }
 
 #home {
@@ -96,6 +103,7 @@ nav a:hover, nav i:hover {
 
 .showcase h1, .showcase p {
   background: rgba(100, 100, 100, 0.6);
+  z-index: 0;
   border-radius: 100px;
   position: fixed;
   top: 20vh;
@@ -108,6 +116,7 @@ nav a:hover, nav i:hover {
 }
 
 #about, .quiz {
+  z-index: 1;
   border: 2px solid white;
   border-radius: 20px;
   background: var(--primary-color);
@@ -121,8 +130,8 @@ nav a:hover, nav i:hover {
   color: black;
 }
 
-#about img{
-  max-width: 60%;
+#about img {
+  max-width: 50%;
 }
 
 .quiz {
