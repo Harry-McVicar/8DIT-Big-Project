@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans&family=Roboto&display=swap');
 
 * {
   padding: 0;
@@ -56,7 +57,6 @@ nav a:hover, nav i:hover {
 }
 
 .showcase {
-  font-family: var(--primary-font);
   z-index: -1;
   height: 100vh;
   width: 100vw;
@@ -71,7 +71,7 @@ nav a:hover, nav i:hover {
 }
 
 #home {
-  background: url(img/showcase.svg);
+  background: url(img/showcase-3.svg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -102,17 +102,34 @@ nav a:hover, nav i:hover {
 }
 
 .showcase h1, .showcase p {
-  background: rgba(100, 100, 100, 0.6);
   z-index: 0;
   border-radius: 100px;
   position: fixed;
   top: 20vh;
+  left: 0;
   padding: 20px;
   margin: 10px 60px;
+  font-size: 30px;
+  font-style: italic;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.showcase span {
+  font-size: 70px;
+  font-weight: bolder;
+  transform: rotate(-15deg);
+  text-align: left;
+  font-style: normal;
 }
 
 .showcase p {
   top: 30vh;
+}
+
+.dash {
+  font-size: 60px;
+  font-weight: bolder;
 }
 
 #about, .quiz {
@@ -123,6 +140,7 @@ nav a:hover, nav i:hover {
   opacity: 0.6;
   text-align: center;
   padding: 20px;
+
 }
 
 #about h1, #about p, .quiz h1 {
@@ -136,18 +154,20 @@ nav a:hover, nav i:hover {
 
 .quiz {
   padding: 20px 5%;
+  margin: 0 auto;
 }
 
 .question {
   color: black;
 	font-size: 24px;
-	margin: 10px;
+	padding: 20px 0px 10px 0px;
 }
 
 .answers {
   color: black;
   margin-bottom: 20px;
 	text-align: justify;
+  padding-left: 20%;
 }
 
 .quiz #submit {
