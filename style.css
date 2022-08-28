@@ -50,6 +50,7 @@ nav a:hover, nav i:hover {
 }
 
 #logo img {
+  display: inline-block;
   margin: 10px;
   padding: 2px;
   opacity: 0.8;
@@ -57,20 +58,27 @@ nav a:hover, nav i:hover {
   border: 2px solid white;
 }
 
-#menu {
+.nav-toggle {
   display: none;
   font-size: 40px;
-  padding: 20px;
+  margin: 20px;
+  padding: 0;
 }
 
 @media only screen and (max-width: 900px) {
-  nav ul {
-    display: none;
-  }
-
-  #menu {
+  .nav-toggle {
     display: block;
     float: right;
+  }
+
+  .links {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .showlinks {
+    height: auto;
+    flex-direction: column;
   }
 }
 
@@ -175,8 +183,12 @@ nav a:hover, nav i:hover {
 }
 
 #about h1, #about p, .quiz h1 {
-  padding: 10px;
+  padding: 10px 10%;
   color: black;
+}
+
+#about p {
+  text-align: justify;
 }
 
 #about img {
@@ -191,14 +203,15 @@ nav a:hover, nav i:hover {
 .question {
   color: black;
 	font-size: 24px;
-	padding: 20px 0px 10px 0px;
+	padding: 20px 0 10px 0;
 }
 
 .answers {
   color: black;
   margin-bottom: 20px;
 	text-align: justify;
-  padding-left: 20%;
+  padding: 0 20%;
+  line-height: 1.5;
 }
 
 .quiz #submit {

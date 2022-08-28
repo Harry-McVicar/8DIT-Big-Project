@@ -170,3 +170,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 }
 
 generateQuiz(quizQuestions, quizContainer, resultsContainer, submitButton);
+
+
+/*Navigation toggle*/
+
+const navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links")
+
+navToggle.addEventListener("click", function() {
+  links.classList.toggle("showlinks");
+})
