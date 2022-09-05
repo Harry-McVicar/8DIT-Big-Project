@@ -223,6 +223,28 @@ nav a:hover, nav i:hover {
   border-radius: 10px;
 }
 
+.slider-container {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.slide {
+  place-items: center;
+  position: absolute;
+}
+
+.slide img {
+  width: 40vw;
+  height: 40vh;
+}
+
+.btn-container {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  color: black;
+}
+
 footer {
   background: var(--secondary-color);
   opacity: 0.9;

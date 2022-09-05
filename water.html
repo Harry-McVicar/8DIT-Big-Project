@@ -12,8 +12,8 @@
   <header>
     <nav>
       <a href="index.html" id="logo"><img src="img/FRED.svg" alt="logo"></a>
-      <a href="#" id="menu"><i class="fas fa-solid fa-bars"></i></a>
-      <ul>
+      <button class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
+      <ul class="links">
         <li id="active"><a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a></li>
         <li><a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a></li>
         <li><a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a></li>
@@ -31,11 +31,21 @@
   <section id="about">
     <img src="img/hydropower.jpg" alt="hydropower-diagram">
   </section>
+  <div class="slider-container">
+    <div class="slide"><img src="img/biomass-power.jpg" alt=""></div>
+    <div class="slide"><img src="img/geothermal-power.jpg" alt=""></div>
+    <div class="slide"><img src="img/hydropower.jpg" alt=""></div>
+  </div>
+  <div class="btn-container">
+    <button type="button" class="prevBtn">prev</button>
+    <button type="button" class="nextBtn">next</button>
+  </div>
   <footer>
     <p>FRED Encorperation &copy; 2022</p>
     <a href="#"><i class="fab fa-brands fa-facebook"></i></a>
     <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
     <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
   </footer>
+  <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
