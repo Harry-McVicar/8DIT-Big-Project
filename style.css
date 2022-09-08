@@ -189,6 +189,7 @@ nav a:hover, nav i:hover {
 
 #about p {
   text-align: justify;
+  color: white;
 }
 
 #about img {
@@ -243,6 +244,44 @@ nav a:hover, nav i:hover {
   bottom: 0;
   text-align: center;
   color: black;
+}
+
+#content {
+  text-align: center;
+  background: var(--primary-color);
+  border: var(--border);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#content p {
+  padding: 20px 10vw;
+  text-align: justify;
+  font-family: var(--primary-font);
+}
+
+#content img {
+  position: relative;
+  border-radius: 10px;
+  width: 30vw;
+}
+
+.content {
+  display: none;
+}
+
+.container .active {
+  display: inline-block;
+}
+
+.btn-container .tab-btn {
+  font-size: 20px;
+  background: var(--primary-color);
+  padding: 10px 20px;
+  margin: 0px 20px 20px 20px;
+  border: var(--border);
+  border-radius: 10px;
+  width: 200px;
 }
 
 footer {

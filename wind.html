@@ -12,7 +12,7 @@
   <header>
     <nav>
       <a href="index.html" id="logo"><img src="img/FRED.svg" alt="logo"></a>
-      <button class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
+      <button onclick="openNav()" class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
       <ul class="links">
         <li id="active"><a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a></li>
         <li><a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a></li>
@@ -31,11 +31,36 @@
   <section id="about">
     <img src="img/wind-power.jpg" alt="wind-power-diagram">
   </section>
+  <section class="container" id="content">
+    <div class="btn-container">
+      <button class="tab-btn active" data-id="about">About</button>
+      <button class="tab-btn" data-id="keys">Keys</button>
+      <button class="tab-btn" data-id="passwords">Passwords</button>
+      <button class="tab-btn" data-id="implications">Implications</button>
+    </div>
+    <div class="content active" id="about">
+      <h1>What is wind power and why is it so important?</h1>
+      <img src="img/wind-power.jpg" alt="wind-power-diagram">
+    </div>
+    <div class="content" id="keys">
+      <h1>Header 1</h1>
+      <img src="img/wind-power.jpg" alt="wind-power-diagram">
+    </div>
+    <div class="content" id="passwords">
+      <h1>Header 2</h1>
+      <img src="img/wind-power.jpg" alt="wind-power-diagram">
+    </div>
+    <div class="content" id="implications">
+      <h1>Header 3</h1>
+      <img src="img/wind-power.jpg" alt="wind-power-diagram">
+    </div>
+  </section>
   <footer>
-    <p>FRED Encorperation &copy; 2022</p>
+    <p>FRED Incorperation &copy; 2022</p>
     <a href="#"><i class="fab fa-brands fa-facebook"></i></a>
     <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
     <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
   </footer>
+  <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
