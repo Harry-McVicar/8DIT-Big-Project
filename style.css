@@ -226,18 +226,25 @@ nav a:hover, nav i:hover {
 
 .slider-container {
   width: 40vw;
+  height: 40vh;
+  border: 2px solid black;
   margin: 0 auto;
-}
-
-.slide {
-  place-items: center;
-  position: absolute;
+  overflow: hidden;
 }
 
 .slide img {
   width: 40vw;
   height: 40vh;
 }
+
+/* @keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.slide {
+  transform: translateY(-200%);
+} */
 
 .btn-container {
   position: relative;

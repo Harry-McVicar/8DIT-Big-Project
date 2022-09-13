@@ -213,9 +213,9 @@ const slides = document.querySelectorAll(".slide");
 const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
 
-slides.forEach(function (slide, index) {
-  slide.style.left = '${index * 100}%';
-});
+// slides.forEach(function (slide, index) {
+//   slide.style.left = '${index * 100}%';
+// });
 
 let counter = 0;
 
@@ -239,6 +239,7 @@ function carousel() {
   }
 
   slides.forEach(function (slide) {
-    slide.style.transform = 'translateX(-${counter * 100}%)';
+    slide.style.transform = 'translateY('+ (counter*-100) +'%)';
+    console.log('translateY('+ (counter*-100) +'%)');
   });
 }
