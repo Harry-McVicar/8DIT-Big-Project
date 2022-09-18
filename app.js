@@ -240,6 +240,5 @@ function carousel() {
 
   slides.forEach(function (slide) {
     slide.style.transform = 'translateY('+ (counter*-100) +'%)';
-    console.log('translateY('+ (counter*-100) +'%)');
   });
 }
