@@ -25,49 +25,49 @@
         <div class="dropdown">
           <li><a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a></li>
           <div class="dropdown-content">
-              <a href="#about">About</a>
-              <a href="#concept">Concept</a>
-              <a href="#implications">Implications</a>
+              <a href="water.html#about">About</a>
+              <a href="water.html#concept">Concept</a>
+              <a href="water.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
           <li><a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a></li>
           <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#concept">Concept</a>
-            <a href="#implications">Implications</a>
+            <a href="wind.html#about">About</a>
+            <a href="wind.html#concept">Concept</a>
+            <a href="wind.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
           <li><a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a></li>
           <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#concept">Concept</a>
-            <a href="#implications">Implications</a>
+            <a href="sun.html#about">About</a>
+            <a href="sun.html#concept">Concept</a>
+            <a href="sun.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
           <li><a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a></li>
           <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#concept">Concept</a>
-            <a href="#implications">Implications</a>
+            <a href="earth.html#about">About</a>
+            <a href="earth.html#concept">Concept</a>
+            <a href="earth.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
           <li><a href="atoms.html"><i class="fas fa-solid fa-atom"></i>Atoms</a></li>
           <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#concept">Concept</a>
-            <a href="#implications">Implications</a>
+            <a href="atoms.html#about">About</a>
+            <a href="atoms.html#concept">Concept</a>
+            <a href="atoms.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
           <li><a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a></li>
           <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#concept">Concept</a>
-            <a href="#implications">Implications</a>
+            <a href="plants.html#about">About</a>
+            <a href="plants.html#concept">Concept</a>
+            <a href="plants.html#implications">Implications</a>
           </div>
         </div>
       </ul>
@@ -90,6 +90,58 @@
     <div id="quiz"></div>
     <button id="submit">Get Results</button>
     <div id="results"></div>
+  </section>
+  <section class="drag-and-drop">
+    <h1>Categorise each of the following forms of energy production as renewable or nonrenewable:</h1>
+    <div
+    class="parent"
+    ondragover="onDragOver(event)"
+    ondrop="onDrop(event)"
+    >
+      <div class="origin">
+        <p>Renewable</p>
+        <div
+          id="draggable-1"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event)"
+        >
+          Fossil Fuels
+        </div>
+        <div
+        id="draggable-2"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        Hydropower
+      </div>
+      <div
+        id="draggable-3"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        Wind Power
+      </div>
+      <div
+        id="draggable-4"
+        class="draggable"
+        draggable="true"
+        ondragstart="onDragStart(event);"
+      >
+        Solar Power
+      </div>
+    </div>
+
+    <div
+      class="dropzone"
+      ondragover="onDragOver(event)"
+      ondrop="onDrop(event)"
+    >
+      <p>Nonrenewable</p>
+    </div>
+    </div>
   </section>
   <footer>
     <p>FRED Incorperation &copy; 2022</p>

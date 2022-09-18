@@ -1,6 +1,6 @@
-/*Interactive quiz*/
-
 if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.html") {
+  /*Interactive Quiz*/
+
   var quizQuestions = [
     {
       question: "1. Renewable Energy:",
@@ -173,10 +173,35 @@ if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.h
   }
 
   generateQuiz(quizQuestions, quizContainer, resultsContainer, submitButton);
+
+
+  /*Drag and Drop*/
+
+  function onDragStart(event) {
+    event
+      .dataTransfer
+      .setData('text/plain', event.target.id);
+  }
+
+  function onDragOver(event) {
+    event.preventDefault();
+  }
+
+  function onDrop(event) {
+    const id = event
+      .dataTransfer
+      .getData('text');
+    const draggableElement = document.getElementById(id);
+    const dropzone = event.target;
+    dropzone.appendChild(draggableElement);
+    event
+      .dataTransfer
+      .clearData();
+  }
 }
 
 
-/*Navigation toggle*/
+/*Navigation Toggle*/
 
 const links = document.querySelector(".links");
 
@@ -185,7 +210,7 @@ function openNav() {
 };
 
 
-/*Tabs system*/
+/*Tabs System*/
 
 const btns = document.querySelectorAll(".tab-btn");
 const contents = document.querySelectorAll(".content");
@@ -207,15 +232,11 @@ container.addEventListener("click", function (e) {
 });
 
 
-/*Image slider*/
+/*Image Slider*/
 
 const slides = document.querySelectorAll(".slide");
 const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
-
-// slides.forEach(function (slide, index) {
-//   slide.style.left = '${index * 100}%';
-// });
 
 let counter = 0;
 

@@ -16,6 +16,8 @@
   --secondary-font: 'Tourney', cursive;
 }
 
+/*Nav Bar*/
+
 header {
   font-family: var(--primary-font);
   top: 0;
@@ -58,6 +60,8 @@ nav a:hover, nav i:hover {
   border: 2px solid white;
 }
 
+/*Nav Toggle at Small Screen Size*/
+
 .nav-toggle {
   display: none;
   font-size: 40px;
@@ -80,6 +84,8 @@ nav a:hover, nav i:hover {
     height: auto;
   }
 }
+
+/*Showcase Text*/
 
 .showcase {
   z-index: -1;
@@ -139,6 +145,8 @@ nav a:hover, nav i:hover {
   top: 80vh;
 }
 
+/*Showcase Background Images*/
+
 #home {
   background: url(img/showcase-3.svg);
   background-size: cover;
@@ -170,6 +178,8 @@ nav a:hover, nav i:hover {
   background: url(img/tree.jpg);
 }
 
+/*About Section*/
+
 #about, .quiz {
   z-index: 1;
   border: 2px solid white;
@@ -194,6 +204,8 @@ nav a:hover, nav i:hover {
 #about img {
   max-width: 50%;
 }
+
+/*Quiz*/
 
 .quiz {
   padding: 20px 5%;
@@ -223,6 +235,8 @@ nav a:hover, nav i:hover {
   border-radius: 10px;
 }
 
+/*Image Slider*/
+
 .slider-container {
   width: 40vw;
   height: 40vh;
@@ -236,21 +250,14 @@ nav a:hover, nav i:hover {
   height: 40vh;
 }
 
-/* @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
-}
-
-.slide {
-  transform: translateY(-200%);
-} */
-
 .btn-container {
   position: relative;
   bottom: 0;
   text-align: center;
   color: black;
 }
+
+/*Tab System*/
 
 #content {
   text-align: center;
@@ -290,6 +297,8 @@ nav a:hover, nav i:hover {
   width: 200px;
 }
 
+/*Nav Dropdown Menu*/
+
 .dropdown {
     display: inline-block;
     position: relative;
@@ -312,6 +321,55 @@ nav a:hover, nav i:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/*Drag and Drop*/
+
+.drag-and-drop {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.drag-and-drop h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.parent {
+  border: 2px solid black;
+  color: black;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.origin {
+  background: var(--dark);
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.draggable {
+  background-color: #4AAE9B;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dropzone {
+  background-color: var(--primary);
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.origin p, .dropzone p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/*Footer*/
 
 footer {
   background: var(--secondary-color);
