@@ -13,15 +13,64 @@
     <nav>
       <a href="index.html" id="logo"><img src="img/FRED.svg" alt="logo"></a>
       <button onclick="openNav()" class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
-      <ul class="links">
-        <li><a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a></li>
-        <li><a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a></li>
-        <li><a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a></li>
-        <li><a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a></li>
-        <li><a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a></li>
-        <li id="active"><a href="atoms.html"><i class="fas fa-solid fa-atom"></i>Atoms</a></li>
-        <li><a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a></li>
-      </ul>
+      <section class="links">
+        <div class="dropdown">
+          <a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a>
+          <div class="dropdown-content">
+              <a href="#about">About</a>
+              <a href="#quiz">Quiz</a>
+              <a href="#drag-and-drop">Drag-and-drop</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a>
+          <div class="dropdown-content">
+              <a href="water.html#overview">Overview</a>
+              <a href="water.html#concept">Concept</a>
+              <a href="water.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a>
+          <div class="dropdown-content">
+            <a href="wind.html#overview">Overview</a>
+            <a href="wind.html#concept">Concept</a>
+            <a href="wind.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a>
+          <div class="dropdown-content">
+            <a href="sun.html#overview">Overview</a>
+            <a href="sun.html#concept">Concept</a>
+            <a href="sun.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a>
+          <div class="dropdown-content">
+            <a href="earth.html#overview">Overview</a>
+            <a href="earth.html#concept">Concept</a>
+            <a href="earth.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="atoms.html" id="active"><i class="fas fa-solid fa-atom"></i>Atoms</a>
+          <div class="dropdown-content">
+            <a href="atoms.html#overview">Overview</a>
+            <a href="atoms.html#concept">Concept</a>
+            <a href="atoms.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a>
+          <div class="dropdown-content">
+            <a href="plants.html#overview">Overview</a>
+            <a href="plants.html#concept">Concept</a>
+            <a href="plants.html#implications">Implications</a>
+          </div>
+        </div>
+      </section>
     </nav>
   </header>
   <section class="showcase" id="atoms">

@@ -13,62 +13,106 @@
     <nav>
       <a href="index.html" id="logo"><img src="img/FRED.svg" alt="logo"></a>
       <button onclick="openNav()" class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
-      <ul class="links">
-        <li><a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a></li>
-        <li><a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a></li>
-        <li id="active"><a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a></li>
-        <li><a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a></li>
-        <li><a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a></li>
-        <li><a href="atoms.html"><i class="fas fa-solid fa-atom"></i>Atoms</a></li>
-        <li><a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a></li>
-      </ul>
+      <section class="links">
+        <div class="dropdown">
+          <a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a>
+          <div class="dropdown-content">
+              <a href="#about">About</a>
+              <a href="#quiz">Quiz</a>
+              <a href="#drag-and-drop">Drag-and-drop</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a>
+          <div class="dropdown-content">
+              <a href="water.html#overview">Overview</a>
+              <a href="water.html#concept">Concept</a>
+              <a href="water.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="wind.html" id="active"><i class="fas fa-solid fa-wind"></i>Wind</a>
+          <div class="dropdown-content">
+            <a href="wind.html#overview">Overview</a>
+            <a href="wind.html#concept">Concept</a>
+            <a href="wind.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a>
+          <div class="dropdown-content">
+            <a href="sun.html#overview">Overview</a>
+            <a href="sun.html#concept">Concept</a>
+            <a href="sun.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a>
+          <div class="dropdown-content">
+            <a href="earth.html#overview">Overview</a>
+            <a href="earth.html#concept">Concept</a>
+            <a href="earth.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="atoms.html"><i class="fas fa-solid fa-atom"></i>Atoms</a>
+          <div class="dropdown-content">
+            <a href="atoms.html#overview">Overview</a>
+            <a href="atoms.html#concept">Concept</a>
+            <a href="atoms.html#implications">Implications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a>
+          <div class="dropdown-content">
+            <a href="plants.html#overview">Overview</a>
+            <a href="plants.html#concept">Concept</a>
+            <a href="plants.html#implications">Implications</a>
+          </div>
+        </div>
+      </section>
     </nav>
   </header>
   <section class="showcase" id="wind">
     <h1>Wind Power</h1>
     <p>Wind power is based on the concept of aerodynamics as the wind turbines must be designed to optimise rotation due to movement in the air acting in any direction. This follows the concept of energy transformation as the kenetic energy from the molecules in the atomsophere and hence wind turbine must be converted into electrical energy which can be stored and used as needed. This is extremely important and fundamental to the production of energy for both domestic and commercial use.</p>
   </section>
-  <section id="about">
-    <img src="img/wind-power.jpg" alt="wind-power-diagram">
-  </section>
   <section class="container" id="content">
-    <div class="btn-container">
-      <button class="tab-btn active" data-id="overview">About</button>
-      <button class="tab-btn" data-id="keys">Keys</button>
-      <button class="tab-btn" data-id="passwords">Passwords</button>
+    <div class="tab-btn-container">
+      <button class="tab-btn active" data-id="overview">Overview</button>
+      <button class="tab-btn" data-id="concept">Concept</button>
       <button class="tab-btn" data-id="implications">Implications</button>
     </div>
     <div class="content active" id="overview">
       <h1>What is wind power and why is it so important?</h1>
       <img src="img/wind-power.jpg" alt="wind-power-diagram">
     </div>
-    <div class="content" id="keys">
-      <h1>Header 1</h1>
-      <img src="img/wind-power.jpg" alt="wind-power-diagram">
-    </div>
-    <div class="content" id="passwords">
-      <h1>Header 2</h1>
-      <img src="img/wind-power.jpg" alt="wind-power-diagram">
+    <div class="content" id="concept">
+      <h1>The Concept</h1>
+      <img src="img/windmills-1.jpg" alt="wind-power-diagram">
     </div>
     <div class="content" id="implications">
-      <h1>Header 3</h1>
-      <img src="img/wind-power.jpg" alt="wind-power-diagram">
+      <h1>Real World Implications</h1>
+      <img src="img/windmills-2.jpg" alt="wind-power-diagram">
     </div>
   </section>
-  <div class="slider-container">
-    <div class="slide"><img src="img/biomass-power.jpg" alt=""></div>
-    <div class="slide"><img src="img/geothermal-power.jpg" alt=""></div>
-    <div class="slide"><img src="img/hydropower.jpg" alt=""></div>
-  </div>
-  <div class="btn-container">
-    <button type="button" class="prevBtn">prev</button>
-    <button type="button" class="nextBtn">next</button>
-  </div>
+  <section class="slider">
+    <div class="slider-container">
+      <div class="slide"><img src="img/biomass-power.jpg" alt=""></div>
+      <div class="slide"><img src="img/geothermal-power.jpg" alt=""></div>
+      <div class="slide"><img src="img/hydropower.jpg" alt=""></div>
+    </div>
+    <div class="slider-btn-container">
+      <button type="button" class="prevBtn"><i class="fas fa-solid fa-circle-arrow-left"></i></button>
+      <button type="button" class="nextBtn"><i class="fas fa-solid fa-circle-arrow-right"></i></button>
+    </div>
+  </section>
   <footer>
     <p>FRED Incorperation &copy; 2022</p>
     <a href="#"><i class="fab fa-brands fa-facebook"></i></a>
     <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
     <a href="#"><i class="fab fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-solid fa-circle-arrow-left"></a>
   </footer>
   <script src="app.js" charset="utf-8"></script>
 </body>

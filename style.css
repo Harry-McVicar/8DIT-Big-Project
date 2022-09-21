@@ -27,26 +27,23 @@ header {
   background: var(--secondary-color);
 }
 
-nav ul {
+.links {
   display: inline-flex;
   flex-direction: row;
-  padding: 20px;
-}
-
-nav ul {
+  padding: 35px;
   float: right;
 }
 
-nav li {
+.dropdown a {
   list-style: none;
-  padding: 30px 15px 5px 15px;
+  padding: 15px;
 }
 
-nav i {
+.dropdown i {
   padding: 0 10px 0 10px;
 }
 
-nav a:hover, nav i:hover {
+.dropdown a:hover {
   color: grey;
   transition: 0.6s;
 }
@@ -113,7 +110,7 @@ nav a:hover, nav i:hover {
 
 #home h1, #home p {
   z-index: 0;
-  position: fixed;
+  position: absolute;
   top: 20vh;
   left: 0;
   margin: 10px;
@@ -141,7 +138,7 @@ nav a:hover, nav i:hover {
 }
 
 #scroll-down {
-  position: fixed;
+  position: absolute;
   top: 80vh;
 }
 
@@ -156,26 +153,44 @@ nav a:hover, nav i:hover {
 
 #water {
   background: url(img/reservoir.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #wind {
-  background: url(img/windmills.jpg);
+  background: url(img/windmills-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #sun {
   background: url(img/photovoltaic.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #earth {
   background: url(img/yellowstone-national-park.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #atoms {
   background: url(img/nuclear-power-plant.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #plants {
   background: url(img/tree.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /*About Section*/
@@ -250,10 +265,13 @@ nav a:hover, nav i:hover {
   height: 40vh;
 }
 
-.btn-container {
-  position: relative;
-  bottom: 0;
+.slider-btn-container {
   text-align: center;
+  color: black;
+}
+
+.prevBtn, .nextBtn {
+  width: 20vw;
   color: black;
 }
 
@@ -262,12 +280,13 @@ nav a:hover, nav i:hover {
 #content {
   text-align: center;
   background: var(--primary-color);
-  border: var(--border);
+  opacity: 0.6;
+  border: 2px solid white;
   padding: 20px;
   border-radius: 10px;
 }
 
-#content p {
+#content p, #content h1 {
   padding: 20px 10vw;
   text-align: justify;
   font-family: var(--primary-font);
@@ -287,14 +306,13 @@ nav a:hover, nav i:hover {
   display: inline-block;
 }
 
-.btn-container .tab-btn {
+.tab-btn {
   font-size: 20px;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   padding: 10px 20px;
-  margin: 0px 20px 20px 20px;
-  border: var(--border);
   border-radius: 10px;
-  width: 200px;
+  border: 2px solid white;
+  width: 30vw;
 }
 
 /*Nav Dropdown Menu*/
@@ -324,18 +342,20 @@ nav a:hover, nav i:hover {
 
 /*Drag and Drop*/
 
-.drag-and-drop {
+#drag-and-drop {
+  opacity: 0.6;
+  border: 2px solid white;
   background: var(--primary-color);
   border-radius: 10px;
 }
 
-.drag-and-drop h1 {
+#drag-and-drop h1 {
   text-align: center;
   padding: 20px;
 }
 
 .parent {
-  border: 2px solid black;
+  border: 2px solid white;
   color: black;
   display: flex;
   font-family: sans-serif;
@@ -352,8 +372,7 @@ nav a:hover, nav i:hover {
 .draggable {
   background-color: #4AAE9B;
   font-weight: normal;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px;
   padding: 10px;
 }
 

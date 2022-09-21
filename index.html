@@ -13,64 +13,64 @@
     <nav>
       <a href="index.html" id="logo"><img src="img/FRED.svg" alt="logo"></a>
       <button onclick="openNav()" class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
-      <ul class="links">
+      <section class="links">
         <div class="dropdown">
-          <li id="active"><a href="index.html"><i class="fas fa-solid fa-home"></i>Home</a></li>
+          <a href="index.html" id="active"><i class="fas fa-solid fa-home"></i>Home</a>
           <div class="dropdown-content">
               <a href="#about">About</a>
               <a href="#quiz">Quiz</a>
-              <a href="#">Drag-and-drop</a>
+              <a href="#drag-and-drop">Drag-and-drop</a>
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a></li>
+          <a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a>
           <div class="dropdown-content">
-              <a href="water.html#about">About</a>
+              <a href="water.html#overview">Overview</a>
               <a href="water.html#concept">Concept</a>
               <a href="water.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a></li>
+          <a href="wind.html"><i class="fas fa-solid fa-wind"></i>Wind</a>
           <div class="dropdown-content">
-            <a href="wind.html#about">About</a>
+            <a href="wind.html#overview">Overview</a>
             <a href="wind.html#concept">Concept</a>
             <a href="wind.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a></li>
+          <a href="sun.html"><i class="fas fa-solid fa-sun"></i>Sun</a>
           <div class="dropdown-content">
-            <a href="sun.html#about">About</a>
+            <a href="sun.html#overview">Overview</a>
             <a href="sun.html#concept">Concept</a>
             <a href="sun.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a></li>
+          <a href="earth.html"><i class="fas fa-solid fa-globe"></i>Earth</a>
           <div class="dropdown-content">
-            <a href="earth.html#about">About</a>
+            <a href="earth.html#overview">Overview</a>
             <a href="earth.html#concept">Concept</a>
             <a href="earth.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="atoms.html"><i class="fas fa-solid fa-atom"></i>Atoms</a></li>
+          <a href="atoms.html"><i class="fas fa-solid fa-atom"></i>Atoms</a>
           <div class="dropdown-content">
-            <a href="atoms.html#about">About</a>
+            <a href="atoms.html#overview">Overview</a>
             <a href="atoms.html#concept">Concept</a>
             <a href="atoms.html#implications">Implications</a>
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a></li>
+          <a href="plants.html"><i class="fas fa-solid fa-seedling"></i>Plants</a>
           <div class="dropdown-content">
-            <a href="plants.html#about">About</a>
+            <a href="plants.html#overview">Overview</a>
             <a href="plants.html#concept">Concept</a>
             <a href="plants.html#implications">Implications</a>
           </div>
         </div>
-      </ul>
+      </section>
     </nav>
   </header>
   <section class="showcase" id="home">
@@ -80,7 +80,7 @@
   <section id="about">
     <h1>About Us</h1>
     <p>Here, we are extremely excited to discuss the engineering principles and concepts associated with the design and construction of renewable energy sources. Over the duration of this course, we will share the fundamental learning required to understand the future of renewable energy sources. This is an essential step in our journey as humanity as we progress towards a carbon-neutral grid. This is all part of our vision in creating a brighter, greener future where we can live in harmony with mother nature. Sound too good to be true? Well, ignorance is not the answer, but engineering phenomena may just well be the key to making all this happen.</p>
-    <h1>About the course</h1>
+    <h1>About the Course</h1>
     <p>Throughout this course you will learn the fundamental principles of engineering as well as the concepts associated with renewable energy production including hydropower, wind power, solar power, geothermal energy, nuclear energy and biomass energy as these all exist in a presumably infinite abundance. This should provide you with a base understanding of the engineering associated with renewable energy and the ways in which these are implemented in real life as well. You should develop a sound understanding of the befits these have on the environment as opposed to traditional energy sources such as the mass burning of fossil fuels. Within hydropower, we will discuss the mechanical engineering concepts of fluid dynamics as well as the transformation of energy from gravitational potential energy to kenetic energy and finally to electrical energy. Wind power involves the mechanical engineering principles of aerodynamics and energy transformation. Solar power involves the modern physics concept of the photoelectric effect while nuclear energy follows the modern physics concept of nuclear reactions.</p>
     <h1>Renewable and Non-renewable Energy Sources</h1>
     <p>Renewable energy is energy that is collected from renewable resources that are naturally replenished on a human timescale such as sunlight, wind, rain, tides, waves and geothermal heat. Fossil fuels are considered non-renewable as they are created from the compression of carbon under extreme pressure over long periods of time and are therefore not replenished at a rate fast enough to make them sustainable in the future. This process results in the formation of crude oil which consists of carbon compounds consisting of carbon, hydrogen and oxygen atoms bonded together to form various lengths of carbon chains with differing physical and chemical properties. They also have a detrimental effect of the envronement due to the mass production of greenhouse gases including mostly carbon dioxide which worsen the effects of climate change and global warming. Greenhouse gases absorb infrared radiation emitted from the sun and the earth and hence cause the average temperature of the atmosphere to increase. This acclerates climate change such the melting of the polar caps and habitat destruction. When choosing between the different forms of renewable energy production, there are several factors which must be considered including cost and reliability.</p>
@@ -91,56 +91,27 @@
     <button id="submit">Get Results</button>
     <div id="results"></div>
   </section>
-  <section class="drag-and-drop">
+  <section id="drag-and-drop">
     <h1>Categorise each of the following forms of energy production as renewable or nonrenewable:</h1>
-    <div
-    class="parent"
-    ondragover="onDragOver(event)"
-    ondrop="onDrop(event)"
-    >
+    <div class="parent" ondragover="onDragOver(event)" ondrop="onDrop(event)">
       <div class="origin">
         <p>Renewable</p>
-        <div
-          id="draggable-1"
-          class="draggable"
-          draggable="true"
-          ondragstart="onDragStart(event)"
-        >
+        <div id="draggable-1" class="draggable" draggable="true" ondragstart="onDragStart(event)">
           Fossil Fuels
         </div>
-        <div
-        id="draggable-2"
-        class="draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        Hydropower
+        <div id="draggable-2" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+          Hydropower
+        </div>
+        <div id="draggable-3" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+          Wind Power
+        </div>
+        <div id="draggable-4" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+          Solar Power
+        </div>
       </div>
-      <div
-        id="draggable-3"
-        class="draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        Wind Power
+      <div class="dropzone" ondragover="onDragOver(event)" ondrop="onDrop(event)">
+        <p>Nonrenewable</p>
       </div>
-      <div
-        id="draggable-4"
-        class="draggable"
-        draggable="true"
-        ondragstart="onDragStart(event);"
-      >
-        Solar Power
-      </div>
-    </div>
-
-    <div
-      class="dropzone"
-      ondragover="onDragOver(event)"
-      ondrop="onDrop(event)"
-    >
-      <p>Nonrenewable</p>
-    </div>
     </div>
   </section>
   <footer>
