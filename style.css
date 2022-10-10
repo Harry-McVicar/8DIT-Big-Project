@@ -73,12 +73,11 @@ header {
   }
 
   .links {
-    height: 0;
-    overflow: hidden;
+    display: none;
   }
 
   .showlinks {
-    height: auto;
+    display: flex;
   }
 }
 
@@ -90,17 +89,14 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
 }
 
 .showcase h1:not(#home h1), .showcase p:not(#home p) {
-  background: rgba(100, 100, 100, 0.6);
   z-index: 0;
-  border-radius: 80px;
   position: absolute;
-  padding: 20px;
   margin: 10%;
-  top: 5vh;
+  top: 10vh;
 }
 
 .showcase p:not(#home p) {
@@ -152,42 +148,42 @@ header {
 }
 
 #water {
-  background: url(img/reservoir.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.4)), url(img/reservoir.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #wind {
-  background: url(img/windmills-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.4)), url(img/windmills-1.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #sun {
-  background: url(img/photovoltaic.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.4)), url(img/photovoltaic.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #earth {
-  background: url(img/yellowstone-national-park.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.4)), url(img/yellowstone-national-park.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #atoms {
-  background: url(img/nuclear-power-plant.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.4)), url(img/nuclear-power-plant.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #plants {
-  background: url(img/tree.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(40, 40, 40, 0.4)), url(img/tree.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
