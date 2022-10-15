@@ -1,3 +1,18 @@
+/*Nav Display*/
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos < currentScrollPos) {
+    document.getElementById("nav-container-fade").style.display = "none";
+  }
+  else {
+    document.getElementById("nav-container-fade").style.display = "block";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
 if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.html") {
   /*Interactive Quiz*/
 
