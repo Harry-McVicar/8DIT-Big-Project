@@ -1,4 +1,4 @@
-/*Nav Display*/
+/*Navigation Display*/
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -10,6 +10,15 @@ window.onscroll = function() {
     document.getElementById("nav-container-fade").style.display = "block";
   }
   prevScrollpos = currentScrollPos;
+}
+
+
+/*Navigation Toggle*/
+
+const links = document.querySelector(".links");
+
+function openNav() {
+  links.classList.toggle("showlinks");
 }
 
 
@@ -182,7 +191,7 @@ if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.h
 
     showQuestions(questions, quizContainer);
 
-    submitButton.onclick = function(){
+    submitButton.onclick = function() {
       showResults(questions, quizContainer, resultsContainer);
     };
   }
@@ -213,16 +222,45 @@ if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.h
       .dataTransfer
       .clearData();
   }
+
+  function showScore(dropzone, origin, score, scoreContainer) {
+    if (dropzone.contains(document.getElementById("draggable-1"))) {
+      score++;
+    }
+    if (dropzone.contains(document.getElementById("draggable-4"))) {
+      score++;
+    }
+    if (dropzone.contains(document.getElementById("draggable-5"))) {
+      score++;
+    }
+    if (dropzone.contains(document.getElementById("draggable-7"))) {
+      score++;
+    }
+    if (origin.contains(document.getElementById("draggable-2"))) {
+      score++;
+    }
+    if (origin.contains(document.getElementById("draggable-3"))) {
+      score++;
+    }
+    if (origin.contains(document.getElementById("draggable-6"))) {
+      score++;
+    }
+    if (origin.contains(document.getElementById("draggable-8"))) {
+      score++;
+    }
+    scoreContainer.innerHTML = score + ' out of 8';
+    console.log(score);
+  }
+
+  checkButton = document.getElementById("check");
+  checkButton.onclick = function() {
+    const dropzone = document.querySelector(".dropzone");
+    const origin = document.querySelector(".origin");
+    const scoreContainer = document.getElementById("score")
+    var score = 0;
+    showScore(dropzone, origin, score, scoreContainer);
+  };
 }
-
-
-/*Navigation Toggle*/
-
-const links = document.querySelector(".links");
-
-function openNav() {
-  links.classList.toggle("showlinks");
-};
 
 
 /*Tabs System*/

@@ -9,8 +9,8 @@
   <title>FRED</title>
 </head>
 <body>
-  <header id="nav-container-fade">
-    <nav>
+  <header>
+    <nav id="nav-container-fade">
       <a href="index.html" id="logo"><img src="img/FRED.svg" alt="logo"></a>
       <button onclick="openNav()" class="nav-toggle"><i class="fas fa-solid fa-bars"></i></button>
       <section class="links">
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <a href="water.html"><i class="fas fa-solid fa-water"></i>Water</a>
+          <a href="renewable-energy.html"><i class="fas fa-solid fa-water"></i>Water</a>
           <div class="dropdown-content">
               <a href="water.html#overview">Overview</a>
               <a href="water.html#concept">Concept</a>
@@ -97,22 +97,36 @@
       <div class="origin">
         <p>Renewable</p>
         <div id="draggable-1" class="draggable" draggable="true" ondragstart="onDragStart(event)">
-          Fossil Fuels
+          Petroleum
         </div>
-        <div id="draggable-2" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+        <div id="draggable-2" class="draggable" draggable="true" ondragstart="onDragStart(event)">
           Hydropower
         </div>
-        <div id="draggable-3" class="draggable" draggable="true" ondragstart="onDragStart(event);">
+        <div id="draggable-3" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+          Solar power
+        </div>
+        <div id="draggable-4" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+          Nuclear Energy
+        </div>
+        <div id="draggable-5" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+          Natural Gas
+        </div>
+        <div id="draggable-6" class="draggable" draggable="true" ondragstart="onDragStart(event)">
           Wind Power
         </div>
-        <div id="draggable-4" class="draggable" draggable="true" ondragstart="onDragStart(event);">
-          Solar Power
+        <div id="draggable-7" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+          Coal
+        </div>
+        <div id="draggable-8" class="draggable" draggable="true" ondragstart="onDragStart(event)">
+          Geothermal Energy
         </div>
       </div>
       <div class="dropzone" ondragover="onDragOver(event)" ondrop="onDrop(event)">
         <p>Nonrenewable</p>
       </div>
     </div>
+    <button id="check">Get Results</button>
+    <div id="score"></div>
   </section>
   <footer>
     <p>FRED Incorperation &copy; 2022</p>

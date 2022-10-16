@@ -20,7 +20,6 @@
 
 header {
   font-family: var(--primary-font);
-  top: 0;
   z-index: 1;
   width: 100vw;
   position: fixed;
@@ -92,11 +91,11 @@ header {
   text-align: justify;
 }
 
-.showcase h1:not(#home h1), .showcase p:not(#home p) {
+.showcase h1:not(#home h1) {
   z-index: 0;
-  position: absolute;
-  margin: 10%;
-  top: 10vh;
+  position: relative;
+  padding: 50vh;
+  font-size: 40px;
 }
 
 .showcase p:not(#home p) {
@@ -141,7 +140,7 @@ header {
 /*Showcase Background Images*/
 
 #home {
-  background: url(img/showcase-3.svg);
+  background: url(img/showcase-2.svg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -213,7 +212,7 @@ header {
 }
 
 #about img {
-  max-width: 50%;
+  max-width: 40%;
 }
 
 /*Quiz*/
@@ -237,7 +236,7 @@ header {
   line-height: 1.5;
 }
 
-.quiz #submit {
+#submit, #check {
   background: var(--secondary-color);
   border: 2px solid white;
   font-size: 20px;
@@ -311,7 +310,7 @@ header {
   width: 30vw;
 }
 
-/*Nav Dropdown Menu*/
+/*Navigation Dropdown Menu*/
 
 .dropdown {
     display: inline-block;
@@ -343,10 +342,10 @@ header {
   border: 2px solid white;
   background: var(--primary-color);
   border-radius: 10px;
+  text-align: center;
 }
 
 #drag-and-drop h1 {
-  text-align: center;
   padding: 20px;
 }
 
