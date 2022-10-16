@@ -22,6 +22,7 @@ function openNav() {
 }
 
 
+/*If statement to prevent running the quiz or drag-and drop code on the other pages.*/
 if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.html") {
   /*Interactive Quiz*/
 
