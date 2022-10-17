@@ -10,7 +10,7 @@ window.onscroll = function() {
     document.getElementById("nav-container-fade").style.display = "block";
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
 
 /*Navigation Toggle*/
@@ -257,7 +257,7 @@ if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.h
   checkButton.onclick = function() {
     const dropzone = document.querySelector(".dropzone");
     const origin = document.querySelector(".origin");
-    const scoreContainer = document.getElementById("score")
+    const scoreContainer = document.getElementById("score");
     var score = 0;
     showScore(dropzone, origin, score, scoreContainer);
   };
