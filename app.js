@@ -1,4 +1,4 @@
-/*Navigation Display*/
+/*Hides navigation bar as the user scrolls down while revealing it as the user scrolls up.*/
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -13,7 +13,7 @@ window.onscroll = function() {
 };
 
 
-/*Navigation Toggle*/
+/*Navigation toggle at small screen size.*/
 
 const links = document.querySelector(".links");
 
