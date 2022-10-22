@@ -1,4 +1,4 @@
-/*Hides navigation bar as the user scrolls down while revealing it as the user scrolls up.*/
+/*Hides navigation bar as the user scrolls down while revealing it as they scroll up.*/
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -23,7 +23,7 @@ function openNav() {
 
 
 /*If statement to prevent running the quiz or drag-and drop code on the other pages.*/
-if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.html") {
+if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.html" || document.URL === "https://harry-mcvicar.github.io/8DIT-Big-Project/index.html" || document.URL === "https://harry-mcvicar.github.io/8DIT-Big-Project/") {
   /*Interactive Quiz*/
 
   var quizQuestions = [
@@ -264,56 +264,58 @@ if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.h
 }
 
 
-/*Tabs System*/
+if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/future.html" || document.URL === "https://harry-mcvicar.github.io/8DIT-Big-Project/future.html") {
+  /*Tabs System*/
 
-const btns = document.querySelectorAll(".tab-btn");
-const contents = document.querySelectorAll(".content");
-const container = document.querySelector(".container");
+  const btns = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".content");
+  const container = document.querySelector(".container");
 
-container.addEventListener("click", function (e) {
-  const id = e.target.dataset.id;
-  if (id) {
-    btns.forEach(function (btn) {
-      btn.classList.remove("active");
-      e.target.classList.add("active");
-    });
-    contents.forEach(function (content) {
-      content.classList.remove("active");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("active");
-  }
-});
-
-
-/*Image Slider*/
-
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.querySelector(".nextBtn");
-const prevBtn = document.querySelector(".prevBtn");
-
-let counter = 0;
-
-nextBtn.addEventListener("click", function () {
-  counter++;
-  carousel();
-});
-
-prevBtn.addEventListener("click", function () {
-  counter--;
-  carousel();
-});
-
-function carousel() {
-  if (counter === slides.length) {
-    counter = 0;
-  }
-
-  if (counter < 0) {
-    counter = slides.length - 1;
-  }
-
-  slides.forEach(function (slide) {
-    slide.style.transform = 'translateY('+ (counter*-100) +'%)';
+  container.addEventListener("click", function (e) {
+    const id = e.target.dataset.id;
+    if (id) {
+      btns.forEach(function (btn) {
+        btn.classList.remove("active");
+        e.target.classList.add("active");
+      });
+      contents.forEach(function (content) {
+        content.classList.remove("active");
+      });
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    }
   });
+
+
+  /*Image Slider*/
+
+  const slides = document.querySelectorAll(".slide");
+  const nextBtn = document.querySelector(".nextBtn");
+  const prevBtn = document.querySelector(".prevBtn");
+
+  let counter = 0;
+
+  nextBtn.addEventListener("click", function () {
+    counter++;
+    carousel();
+  });
+
+  prevBtn.addEventListener("click", function () {
+    counter--;
+    carousel();
+  });
+
+  function carousel() {
+    if (counter === slides.length) {
+      counter = 0;
+    }
+
+    if (counter < 0) {
+      counter = slides.length - 1;
+    }
+
+    slides.forEach(function (slide) {
+      slide.style.transform = 'translateY('+ (counter*-100) +'%)';
+    });
+  }
 }
