@@ -215,7 +215,7 @@ header {
 }
 
 .about img {
-  max-width: 500px;
+  max-width: 600px;
   max-height: 500px;
   padding: 20px;
 }
@@ -383,7 +383,6 @@ header {
 }
 
 .parent {
-  border: var(--border);
   color: var(--heading-color);
   display: flex;
   font-family: sans-serif;
@@ -449,7 +448,7 @@ footer i {
 
   .showlinks {
     display: flex;
-    padding: 5px;
+    padding: 20px 0;
   }
 
   .showcase span {
@@ -457,7 +456,7 @@ footer i {
   }
 
   .about img {
-    max-width: 70vw;
+    max-width: 80vw;
     max-height: 60vh;
   }
 
