@@ -264,7 +264,6 @@ if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/index.h
 }
 
 
-/*If statement to prevent running the tabs system or image slider code on the other pages.*/
 if (document.URL === "file:///Users/harrymcvicar/github/8DIT-Big-Project/future.html" || document.URL === "https://harry-mcvicar.github.io/8DIT-Big-Project/future.html") {
   /*Tabs System*/
 
